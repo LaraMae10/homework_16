@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Welcome</title>
-        <link rel="stylesheet" href="/static/css/style.css">
-    </head>
+{% extends "base.html" %}
 
-    <body>
-        <h1>Welcome </h1>
-    <img src="/static/img/smartninja-logo.png">
-    </body>
-</html>
+{% block content %}
+
+    <div class="jumbotron">
+  <h1 class="display-4">Welcome!</h1>
+  <p class="lead">A small website about learning web development</p>
+  <hr class="my-4">
+  <p>Webdev is fun :)</p>
+  <a class="btn btn-primary btn-lg" href="/about" role="button">More about me</a>
+</div>
+{% endblock content %}
